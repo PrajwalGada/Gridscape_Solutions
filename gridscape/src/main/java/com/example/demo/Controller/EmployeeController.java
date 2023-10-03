@@ -130,12 +130,6 @@ public class EmployeeController {
 		return ResponseEntity.ok().contentType(MediaType.IMAGE_JPEG).body(imageBytes);
 	}
 
-	@GetMapping("/department")
-	public String getAllDepartments(Model model) {
-		ModelAndView mvn = new ModelAndView("department");
-		List<Department> departments = departmentService.getAllDepartnment();
-		model.addAttribute("departments", departments);
-		return "mvn"; // This line specifies that the template to be used is "department.html"
-	}
+	
 
 }
