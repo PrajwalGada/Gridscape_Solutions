@@ -46,7 +46,7 @@ public class Employee
 	@Column(name="city")
 	private String city;
 	@ManyToOne
-	@JoinColumn(name = "department_id") // Define the foreign key column
+	@JoinColumn(name = "department_id") 
     private Department department;
 	public long getId() {
 		return id;
