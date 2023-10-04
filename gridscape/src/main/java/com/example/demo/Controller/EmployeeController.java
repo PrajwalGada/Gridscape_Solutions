@@ -109,7 +109,7 @@ public class EmployeeController {
 	public String updateEmployee(@ModelAttribute Employee updatedEmployee) {
 
 		service.updateEmployee(updatedEmployee);
-		return "redirect:/list"; // Redirect to the employee list page after updating
+		return "redirect:/list"; 
 	}
 
 	@GetMapping("/list")
